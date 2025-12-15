@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+
+<link rel="icon" type="image/x-icon" href="logo2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء بطاقة التهنئة - Ideal Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Ideal Real Estate Logo" class="site-logo">
+            <h1 class="site-title">Ideal Real Estate</h1>
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+        <section class="form-section">
+            <div class="input-card">
+                <h2>إعداد البطاقة</h2>
+                
+                <form id="greetingForm">
+                    <div class="form-group">
+                        <label for="userName">اسم المستلم:</label>
+                        <input type="text" id="userName" name="userName" required placeholder="مثال: محمد علي">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occasion">اختر المناسبة:</label>
+                        <select id="occasion" name="occasion" required>
+                            <option value="">-- اختر من القائمة --</option>
+                            <option value="عيد ميلاد">عيد ميلاد سعيد</option>
+                            <option value="النجاح والتميز">النجاح والتميز</option>
+                            <option value="الترقية المهنية">الترقية المهنية</option>
+                            <option value="تهنئة خاصة">مناسبة خاصة أخرى</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>اختر لغة البطاقة:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="langAr" name="language" value="ar" checked>
+                            <label for="langAr">العربية</label>
+                            
+                            <input type="radio" id="langEn" name="language" value="en">
+                            <label for="langEn">الإنجليزية</label>
+                            
+                            <input type="radio" id="langBoth" name="language" value="both">
+                            <label for="langBoth">العربية والإنجليزية</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipientType">نوع المستلم:</label>
+                        <select id="recipientType" name="recipientType" required>
+                            <option value="عميلنا العزيز">عميل / كستمر</option>
+                            <option value="الزميل الفاضل">زميل عمل / وركر</option>
+                            <option value="صديقنا الغالي">صديق / شخصي</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="primary-button">
+                        <i class="fas fa-magic"></i> إنشاء وعرض البطاقة 
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Ideal Real Estate. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
